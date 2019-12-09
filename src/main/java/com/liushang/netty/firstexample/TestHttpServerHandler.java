@@ -24,7 +24,7 @@ public class TestHttpServerHandler extends SimpleChannelInboundHandler<HttpObjec
 //                System.out.println("ÇëÇófavion.ico");
 //                return;
 //            }
-            ByteBuf content = Unpooled.copiedBuffer("Hello word", CharsetUtil.UTF_8);
+            ByteBuf content = Unpooled.copiedBuffer("Hello1 word", CharsetUtil.UTF_8);
 
             FullHttpResponse response = new DefaultFullHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.OK, content);
             response.headers().set(HttpHeaderNames.CONTENT_TYPE, "test/plain");
